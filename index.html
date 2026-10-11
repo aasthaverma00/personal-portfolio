@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aastha Verma — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <div class="brand">AV</div>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <span class="theme-icon sun">☀️</span>
+        <span class="theme-icon moon">🌙</span>
+    </button>
+
+    <nav class="nav-pill">
+        <div class="nav-links" id="navLinks">
+            <div class="nav-highlight" id="navHighlight"></div>
+            <a href="#home" data-target="home">Home</a>
+            <a href="#about" data-target="about">About</a>
+            <a href="#projects" data-target="projects">Projects</a>
+            <a href="#skills" data-target="skills">Skills</a>
+            <a href="#certificates" data-target="certificates">Certificates</a>
+            <a href="#contact" data-target="contact">Contact</a>
+        </div>
+    </nav>
+
+    <a href="https://in.linkedin.com/in/aastha-verma30" class="resume-pill" target="_blank">↓ Resume</a>
+
+    <section class="hero">
+        <div class="shape"
+            style="width:80px;height:80px; background:var(--sun); top:8%; left:4%; animation:floaty 7s ease-in-out infinite;">
+        </div>
+        <div class="shape"
+            style="width:50px;height:50px; background:var(--teal); top:70%; left:8%; animation:floaty 5.5s ease-in-out infinite; animation-delay:1s;">
+        </div>
+        <div class="shape"
+            style="width:36px;height:36px; background:var(--pink); top:20%; left:46%; animation:floaty 6s ease-in-out infinite; animation-delay:.4s;">
+        </div>
+        <div class="wrap">
+            <div class="hero-grid">
+                <div>
+                    <div class="hero-badge">👋 Hey, I'm new here — and open to opportunities</div>
+                    <h1 class="headline">Aastha Verma —<br>turning ideas<span class="grad"> into code.</span></h1>
+                    <p class="hero-role">Currently vibing as a <span class="typed-text" id="typedText"></span><span
+                            class="typed-cursor">|</span></p>
+                    <p class="hero-sub">Third-year BCA student who loves turning ideas into colourful, interactive
+                        things on the web. Currently learning, building, and looking for my first internship.</p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn-solid">See my work</a>
+                        <a href="#contact" class="btn-outline">Say hello</a>
+                    </div>
+                </div>
+                <div class="photo-stage">
+                    <div class="blob-bg"></div>
+                    <div class="photo-frame">
+                        <img src="images/profile.jpeg" alt="Aastha Verma">
+
+                    </div>
+                    <!-- <div class="photo-hint">replace src="your-photo.jpg" with your photo</div> -->
+                    <div class="sticker s1">🎓 BCA · 3rd Year</div>
+                    <div class="sticker s2">✨ Open to internships</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="stats-strip">
+        <div class="wrap">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-num" data-count="12">0</div>
+                    <div class="stat-label">Projects built</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" data-count="6" data-suffix="+">0</div>
+                    <div class="stat-label">Languages &amp; tools</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num"  >∞</div>
+                    <div class="stat-label">tabs open</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-num" data-count="10" data-suffix="+">0</div>
+                    <div class="stat-label">Certificate</div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <section id="about">
+        <div class="wrap reveal">
+            <div class="sec-eyebrow">✦ about me</div>
+            <h2 class="sec-title">A little bit about me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm <span class="k">Aastha</span>, a third-year <span class="k">BCA</span> student . I enjoy
+                        creating things that feel simple, useful, and a little different.
+                        For me, coding isn't just about making something work — it's about
+                        experimenting with ideas and turning them into something people can actually use.</p>
+                    <p>I'm naturally <span class="k">curious and tend to explore different creative corners of
+                            technology . </span>From building small web projects to experimenting with designs,
+                        I like learning by actually making things.</p>
+                    <p>I'm still figuring out where my journey in tech will take me, but I'm
+                        enjoying the process — one project, one mistake, and one new idea at a time.</p>
+                </div>
+                <div class="fact-grid">
+                    <div class="fact-card">
+                        <span class="fact-emoji">💭</span>
+                        <div class="fact-label">Random idea?</div>
+                        <div class="fact-val">Let's build it.</div>
+                    </div>
+
+                    <div class="fact-card">
+                        <span class="fact-emoji">🛠️</span>
+                        <div class="fact-label">My comfort zone</div>
+                        <div class="fact-val">Making &amp; breaking</div>
+                    </div>
+
+                    <div class="fact-card">
+                        <span class="fact-emoji">✨</span>
+                        <div class="fact-label">Little things matter</div>
+                        <div class="fact-val">Details &gt; ordinary</div>
+                    </div>
+
+                    <div class="fact-card">
+                        <span class="fact-emoji">🚀</span>
+                        <div class="fact-label">Currently seeking</div>
+                        <div class="fact-val">Internship opportunities</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="wrap reveal">
+            <div class="sec-eyebrow">✦ selected work</div>
+            <h2 class="sec-title">Things I've built</h2>
+            <div class="proj-grid">
+
+                <div class="proj-card" data-tilt data-project="RandomPasswordGenrator" tabindex="0" role="button"
+                    aria-haspopup="dialog">
+                    <div class="proj-strip" style="background:linear-gradient(90deg,var(--grape),var(--coral));"></div>
+                    <div class="proj-body">
+                        <h3 class="proj-name">Random Password Genrator</h3>
+                        <p class="proj-desc">A sleek and customizable password generator designed to create strong
+                            passwords quickly, with a clean interface and multiple useful options.</p>
+                        <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span
+                                class="proj-tag">JS</span></div>
+                        <div class="proj-links">
+                            <a href="https://aasthaverma00.github.io/Password-Generator-/" target="_blank">
+                                Live demo →
+                            </a>
+                            <a href="https://github.com/aasthaverma00/Password-Generator-" target="_blank">
+                                Source →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-tilt data-project="snakeGame" tabindex="0" role="button"
+                    aria-haspopup="dialog">
+                    <div class="proj-strip" style="background:linear-gradient(90deg,var(--teal),var(--sun));"></div>
+                    <div class="proj-body">
+                        <h3 class="proj-name">Snanke Game</h3>
+                        <p class="proj-desc">Classic Snake Game built with HTML, CSS, and JavaScript, featuring score
+                            tracking, sound effects, and multiple controls.</p>
+                        <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span
+                                class="proj-tag">JS</span></div>
+                        <div class="proj-links"><a href="https://aasthaverma00.github.io/snake-game/"
+                                target="_blank">Live demo →</a><a href="https://github.com/aasthaverma00/snake-game"
+                                target="_blank">Source →</a></div>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-tilt data-project="quizGame" tabindex="0" role="button"
+                    aria-haspopup="dialog">
+                    <div class="proj-strip" style="background:linear-gradient(90deg,var(--pink),var(--grape));"></div>
+                    <div class="proj-body">
+                        <h3 class="proj-name">Quiz Game</h3>
+                        <p class="proj-desc">🧠 An interactive 15-question quiz game built with HTML, CSS, and
+                            JavaScript, featuring answer feedback, score calculation, percentage results, and responsive
+                            design.</p>
+                        <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span
+                                class="proj-tag">JS</span></div>
+                        <div class="proj-links"><a href=" https://aasthaverma00.github.io/Quiz-game/"
+                                target="_blank">Live demo →</a><a href="https://github.com/aasthaverma00/Quiz-game/"
+                                target="_blank">Source →</a></div>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-tilt data-project="safarnama" tabindex="0" role="button"
+                    aria-haspopup="dialog">
+                    <div class="proj-strip" style="background:linear-gradient(90deg,var(--sun),var(--coral));"></div>
+                    <div class="proj-body">
+                        <h3 class="proj-name">Safarnama - Explore the World</h3>
+                        <p class="proj-desc">A beginner-friendly travel website built with HTML, CSS, and JavaScript,
+                            featuring popular destinations, travel search, booking options, and a responsive design.
+                            ✈️🌍</p>
+                        <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span
+                                class="proj-tag">JS</span></div>
+                        <div class="proj-links"><a href="https://aasthaverma00.github.io/safarnama-travel-website/"
+                                target="_blank">Live demo →</a><a
+                                href="https://github.com/aasthaverma00/safarnama-travel-website.git" target="_blank"
+                                >Source →</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="wrap reveal">
+            <div class="sec-eyebrow">✦ tools &amp; languages</div>
+            <h2 class="sec-title">What I work with</h2>
+            <div class="skill-grid">
+                <div class="skill-card" data-pct="92" data-color="var(--coral)"
+                    data-fact="My daily driver — from DOM tricks to async everything.">
+                    <div class="ring-wrap"><svg>
+                            <circle class="ring-track" cx="29" cy="29" r="24" />
+                            <circle class="ring-fill" cx="29" cy="29" r="24" stroke="var(--coral)" />
+                        </svg>
+                        <div class="ring-pct">92%</div>
+                    </div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-card" data-pct="85" data-color="var(--teal)"
+                    data-fact="Used for scripting, data bits, and the gitwrapped CLI.">
+                    <div class="ring-wrap"><svg>
+                            <circle class="ring-track" cx="29" cy="29" r="24" />
+                            <circle class="ring-fill" cx="29" cy="29" r="24" stroke="var(--teal)" />
+                        </svg>
+                        <div class="ring-pct">85%</div>
+                    </div>
+                    <div class="skill-name">CSS</div>
+                </div>
+                <div class="skill-card" data-pct="80" data-color="var(--grape)"
+                    data-fact="Hooks, state, and way too many re-renders debugged.">
+                    <div class="ring-wrap"><svg>
+                            <circle class="ring-track" cx="29" cy="29" r="24" />
+                            <circle class="ring-fill" cx="29" cy="29" r="24" stroke="var(--grape)" />
+                        </svg>
+                        <div class="ring-pct">80%</div>
+                    </div>
+                    <div class="skill-name">Python</div>
+                </div>
+                <div class="skill-card" data-pct="70" data-color="var(--sun)"
+                    data-fact="Joins, indexes, and the occasional 2am query fix.">
+                    <div class="ring-wrap"><svg>
+                            <circle class="ring-track" cx="29" cy="29" r="24" />
+                            <circle class="ring-fill" cx="29" cy="29" r="24" stroke="var(--sun)" />
+                        </svg>
+                        <div class="ring-pct">70%</div>
+                    </div>
+                    <div class="skill-name">SQL</div>
+                </div>
+                <div class="skill-card" data-pct="65" data-color="var(--pink)"
+                    data-fact="From college assignments to a couple of Android experiments.">
+                    <div class="ring-wrap"><svg>
+                            <circle class="ring-track" cx="29" cy="29" r="24" />
+                            <circle class="ring-fill" cx="29" cy="29" r="24" stroke="var(--pink)" />
+                        </svg>
+                        <div class="ring-pct">65%</div>
+                    </div>
+                    <div class="skill-name">Java</div>
+                </div>
+                <div class="skill-card" data-pct="60" data-color="var(--grape)"
+                    data-fact="Branches, rebases, and learning to write better commit messages.">
+                    <div class="ring-wrap"><svg>
+                            <circle class="ring-track" cx="29" cy="29" r="24" />
+                            <circle class="ring-fill" cx="29" cy="29" r="24" stroke="var(--grape)" />
+                        </svg>
+                        <div class="ring-pct">75%</div>
+                    </div>
+                    <div class="skill-name">Git</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- certificate -->
+
+    <section id="certificates">
+        <div class="wrap reveal">
+            <div class="sec-eyebrow">✦ certificates</div>
+            <h2 class="sec-title">Things I've learned &amp; earned</h2>
+
+            <div class="stats-grid cert-stats">
+                <div class="stat-card">
+                    <div class="stat-num" data-count="10" data-suffix="+">0</div>
+                    <div class="stat-label">Certificates earned</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" data-count="3" data-suffix="+">0</div>
+                    <div class="stat-label">Platforms</div>
+                </div>
+            </div>
+
+            <!-- One .cert-card = one certificate. -->
+            <div class="cert-grid">
+
+                <div class="cert-card">
+                    <div class="cert-strip" style="background:linear-gradient(90deg,var(--grape),var(--coral));"></div>
+                    <div class="cert-body">
+                        <h3 class="cert-name">Basics of SPSS & Overview of Power BI Desktop</h3>
+                        <p class="cert-issuer">Issued by: Magadh Mahila College & The George Telegraph Training
+                            Institute
+                        </p>
+                        <div class="cert-tags">
+                            <span class="cert-tag">SPSS</span>
+                            <span class="cert-tag">Statistical Analysis</span>
+                            <span class="cert-tag">Power BI</span>
+                        </div>
+                        <div class="cert-tags"><span class="cert-tag">7 May 2025</span></div>
+                        <div class="cert-links"><a href="images/spss certificate.jpg" target="_blank"
+                                rel="noopener">View certificate →</a></div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-strip" style="background:linear-gradient(90deg,var(--teal),var(--sun));"></div>
+                    <div class="cert-body">
+                        <h3 class="cert-name">AI Tools & ChatGPT Workshop</h3>
+                        <p class="cert-issuer">Issued by :
+                            be10x</p>
+                        <div class="cert-tags">
+                            <span class="cert-tag">ChatGPT</span>
+                            <span class="cert-tag">AI Tools</span>
+                            <span class="cert-tag">Google Gemini</span>
+                            <span class="cert-tag">Perplexity AI</span>
+                        </div>
+
+                        <div class="cert-tags"><span class="cert-tag">December 14, 2025</span></div>
+                        <div class="cert-links"><a href="images/be10x.jpg" target="_blank" rel="noopener">View
+                                certificate →</a></div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-strip" style="background:linear-gradient(90deg,var(--pink),var(--grape));"></div>
+                    <div class="cert-body">
+                        <h3 class="cert-name">YUVA AI For All</h3>
+                        <p class="cert-issuer">Issued by : TCS iON — Offered by IndiaAI</p>
+                        <span class="cert-tag">AI Fundamentals</span>
+                        <span class="cert-tag">AI Awareness</span>
+                        <span class="cert-tag">Digital Literacy</span>
+
+                        <span class="cert-tag">AI Applications</span>
+
+
+                        <div class="cert-tags"><span class="cert-tag">January 4 , 2026</span></div>
+                        <div class="cert-links"><a href="images/tcs iqn.jpg" target="_blank" rel="noopener">View
+                                certificate →</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="wrap reveal">
+            <div class="sec-eyebrow">✦ let's talk</div>
+            <h2 class="sec-title">Get in touch</h2>
+            <div class="contact-card">
+                <div class="contact-copy">
+                    <p>Have an internship, a project, or just want to talk about code? My inbox is always open — I try
+                        to reply within a day or two.</p>
+                    <div class="contact-links">
+                        <a href="mailto:aasthavermar30@example.com"><span
+                                class="ic">✉️</span>aasthavermar30@gmail.com</a>
+                        <a href="https://github.com/aasthaverma00" target="blank"><span
+                                class="ic">🐙</span>github.com/aasthaverma00</a>
+                        <a href="https://in.linkedin.com/in/aastha-verma30" target="blank"><span
+                                class="ic">💼</span>linkedin.com/in/aasthaverma</a>
+                    </div>
+                </div>
+                <div class="form-card">
+                    <div id="confettiZone"></div>
+                    <form id="contactForm">
+                        <div class="field"><label for="cname">Name</label><input id="cname" type="text" required
+                                placeholder="Your name"></div>
+                        <div class="field"><label for="cemail">Email</label><input id="cemail" type="email" required
+                                placeholder="you@example.com"></div>
+                        <div class="field"><label for="cmsg">Message</label><textarea id="cmsg" required
+                                placeholder="Say hello..."></textarea></div>
+                        <button class="submit-btn" type="submit">Send message ✨</button>
+                        <div class="form-response" id="formResponse"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>made with 💜 by Aastha Verma · built with HTML, CSS &amp; JS · © 2026</footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+    <div class="skill-bubble" id="skillBubble"></div>
+
+    <div class="proj-modal-backdrop" id="projModalBackdrop">
+        <div class="proj-modal" role="dialog" aria-modal="true" aria-labelledby="projModalTitle">
+            <button class="proj-modal-close" id="projModalClose" aria-label="Close">✕</button>
+            <div class="proj-modal-strip" id="projModalStrip"></div>
+            <div class="proj-modal-body">
+                <h3 id="projModalTitle"></h3>
+                <p id="projModalDesc"></p>
+                <div class="proj-modal-tags" id="projModalTags"></div>
+                <ul class="proj-modal-features" id="projModalFeatures"></ul>
+                <div class="proj-links" id="projModalLinks"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
