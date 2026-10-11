@@ -67,7 +67,7 @@ Designed with a modern look, interactive animations, and a responsive layout, th
 ## 🚀 🌍 Explore My Website
 
 <p align="center">
-  <a href="https://github.com/aasthaverma00/personal-portfolio">
+  <a href="https://aasthaverma00.github.io/personal-portfolio/">
     <img src="https://img.shields.io/badge/✨_VISIT_MY_PORTFOLIO-8A2BE2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Visit My Portfolio" />
   </a>
 </p>
